@@ -9,7 +9,6 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Соцсети | Выбор региона</title>
-    <!-- Подключаем шрифт Inter для современного стиля -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
@@ -33,7 +32,7 @@
             transition: background-color 0.2s;
         }
 
-        /* Основная карточка */
+
         .card {
             max-width: 650px;
             width: 100%;
@@ -50,7 +49,7 @@
             transition: all 0.3s ease;
         }
 
-        /* Заголовок */
+        
         .title {
             font-size: 2.2rem;
             font-weight: 600;
@@ -75,7 +74,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.02);
         }
 
-        /* Описание */
+        
         .sub {
             font-size: 1.1rem;
             font-weight: 400;
@@ -89,7 +88,7 @@
             border: 1px solid rgba(255,255,255,0.6);
         }
 
-        /* Блок с вопросом и кнопками выбора страны */
+        
         .question-box {
             background: rgba(255, 255, 255, 0.6);
             border-radius: 44px;
@@ -153,7 +152,6 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.02);
         }
 
-        /* Активная кнопка региона (подсветка выбора) */
         .region-btn.active {
             background: #e6f0ff;
             border: 1px solid #7ca5ff;
@@ -161,7 +159,7 @@
             color: #103d7a;
         }
 
-        /* Секция ссылок (изначально скрыта) */
+    
         .links-section {
             margin-top: 1.8rem;
             transition: opacity 0.25s ease, transform 0.2s;
@@ -223,7 +221,7 @@
             transition: opacity 0.2s, transform 0.2s;
         }
 
-        /* Индивидуальный цвет при наведении */
+        
         .social-btn:hover {
             background: white;
             box-shadow: 0 20px 30px -14px rgba(38, 77, 128, 0.25);
@@ -240,7 +238,7 @@
             transform: scale(1.1);
         }
 
-        /* Цвета для каждой соцсети (РФ/мир могут отличаться, но оставим различие в иконках/тексте) */
+        
         .social-btn.vk {
             border-left-color: #0077ff;
         }
@@ -269,12 +267,12 @@
             color: #1877f2;
         }
 
-        /* Скрытый класс */
+       
         .hidden {
             display: none !important;
         }
 
-        /* Адаптивность */
+        
         @media (max-width: 480px) {
             .card { padding: 1.8rem 1.2rem; }
             .title { font-size: 1.8rem; }
@@ -283,7 +281,7 @@
             .social-btn { padding: 1rem 1.4rem; }
         }
 
-        /* маленькая подпись */
+       
         .footer-note {
             margin-top: 2.8rem;
             font-size: 0.85rem;
@@ -297,10 +295,6 @@
 <body>
 
 <div class="card" id="appCard">
-    <div style="position: absolute; top: 20px; right: -250px; width: 500px; opacity: 1; pointer-events: none;">
-        <img src="/icon/teddy.png" style="width: 30%;">
-    </div>
-    <!-- Заголовок -->
     <div class="title">
         <i class="fa-regular fa-compass"></i> 
         <span>Мои соцсети</span>
@@ -310,7 +304,7 @@
         <span>teddinki</span>
     </div>
 
-    <!-- Блок с выбором страны (всегда виден) -->
+   
     <div class="question-box">
         <div class="question-text">
             <i class="fa-regular fa-flag"></i> 
@@ -326,7 +320,7 @@
         </div>
     </div>
 
-    <!-- КОНТЕЙНЕР ДЛЯ ССЫЛОК (РФ) - изначально скрыт -->
+   
     <div id="russiaLinks" class="links-section hidden">
         <div class="links-header">
             <i class="fa-regular fa-star" style="color: #1f4b8a;"></i> 
@@ -334,19 +328,19 @@
         </div>
         <div class="links-grid">
 
-            <!-- ВК -->
+            
             <a href="https://vk.ru/teddinki" class="social-btn vk" target="_blank" rel="noopener">
                 <i class="fa-brands fa-vk"></i>
                 <span>ВКонтакте</span>
                 <i class="fa-solid fa-chevron-right arrow"></i>
             </a>
-            <!-- Instagram (для РФ) -->
+           
             <a href="https://www.instagram.com/teddinki?igsh=YmtkNGw3cndpMGY4&utm_source=qr" class="social-btn instagram" target="_blank" rel="noopener">
                 <i class="fa-brands fa-instagram"></i>
                 <span>Instagram</span>
                 <i class="fa-solid fa-chevron-right arrow"></i>
             </a>
-            <!-- Tedsby -->
+           
             <a href="https://teddinki.tedsby.com/" class="social-btn tedsby" target="_blank" rel="noopener">
                 <i>🧸</i>
                 <span>Tedsby</span>
@@ -358,7 +352,7 @@
         </div>
     </div>
 
-    <!-- КОНТЕЙНЕР ДЛЯ ССЫЛОК (ДРУГАЯ СТРАНА) - изначально скрыт -->
+   
     <div id="worldLinks" class="links-section hidden">
         <div class="links-header">
             <i class="fa-regular fa-compass" style="color: #1f6d4a;"></i> 
@@ -366,7 +360,7 @@
         </div>
         <div class="links-grid">
 
-            <!-- Facebook -->
+         
             <a href="https://www.facebook.com/share/1BfDG11x75/?mibextid=wwXIfr" class="social-btn facebook" target="_blank" rel="noopener">
                 <i class="fa-brands fa-facebook"></i>
                 <span>Facebook</span>
@@ -390,14 +384,13 @@
         </div>
     </div>
 
-    <!-- Маленький футер (необязательно) -->
     <div class="footer-note">
         <i class="fa-regular fa-heart" style="margin-right: 5px;"></i> 
         нажми на кнопку региона, чтобы увидеть нужные соцсети
     </div>
 </div>
 
-<!-- Простая логика на чистом JS -->
+
 <script>
     (function() {
         // Получаем элементы
@@ -406,23 +399,23 @@
         const russiaLinks = document.getElementById('russiaLinks');
         const worldLinks = document.getElementById('worldLinks');
 
-        // Функция сброса активного класса у кнопок
+        
         function resetActiveButtons() {
             btnRussia.classList.remove('active');
             btnWorld.classList.remove('active');
         }
 
-        // Показываем только ссылки РФ
+        
         function showRussia() {
             resetActiveButtons();
             btnRussia.classList.add('active');
             
-            // плавное появление (можно было бы через transition, но проще скрыть/показать)
+            
             russiaLinks.classList.remove('hidden');
             worldLinks.classList.add('hidden');
         }
 
-        // Показываем только ссылки для остального мира
+        
         function showWorld() {
             resetActiveButtons();
             btnWorld.classList.add('active');
@@ -431,61 +424,19 @@
             russiaLinks.classList.add('hidden');
         }
 
-        // Обработчики событий
+       
         btnRussia.addEventListener('click', showRussia);
         btnWorld.addEventListener('click', showWorld);
 
-        // Опционально: установим начальное состояние — никакой блок не показываем,
-        // но можно по умолчанию показать что-то одно, например Россию (или ничего).
-        // По заданию: "при входе спрашивают...", значит изначально ссылок нет.
-        // Поэтому оставляем как есть (оба скрыты, кнопки неактивны).
-        // Однако если хотите предвыборку — можно раскомментировать:
-        // showRussia(); // показать РФ при загрузке
-        // Но лучше оставить нейтрально, просто вопрос.
-        // Кнопки не подсвечены.
-        // Для удобства я добавлю, чтобы при первом входе был hints, но мы оставляем чистое состояние.
-        // Ещё можно сделать подсказку в футере.
-
-        // Дополнительная деталь: при клике на Россию или Другую страну будут показываться соответствующие ссылки.
-        // Если нужно, чтобы после выбора повторный клик по той же кнопке не прятал ссылки — 
-        // текущая логика корректна (просто показывает соответствующий блок).
-
-        // Чтобы добавить эстетики — сделаем так, чтобы изначально (при первой загрузке) не было активно ни одной,
-        // но если пользователь тыкнет, то подсветка останется.
-
-        // Ещё для красоты: установим обработку на "умные" ссылки — пока что они ведут на "#", 
-        // но их можно заменить реальными. Я оставлю заглушки, но добавлю предупреждение при клике.
-        const allSocialLinks = document.querySelectorAll('.social-btn');
-        allSocialLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                if (link.getAttribute('href') === '#') {
-                    e.preventDefault();
-                    alert('[пример ссылки] сюда можно вставить реальный URL — ' + link.querySelector('span')?.innerText);
-                }
-                // иначе поведение стандартное
+    
+                
             });
         });
 
-        // Начальное состояние: скрыть оба блока, кнопки неактивные — это и так верстка.
-        // Но проверим, что нет случайного visible.
-        // Вдруг кто-то добавил hidden вручную, но у нас оба блока с hidden — всё ок.
-        // Так же добавим возможность скрывать ссылки, если нажать на активную кнопку повторно? 
-        // Не было в тз, но можно сделать "лёгкое переключение". 
-        // Однако для простоты оставим как есть: клик на Россия -> показывает РФ ссылки (скрывает мир).
-        // Клик на Другая страна -> показывает мир (скрывает РФ).
-        // Если нужно будет потом скрыть — можно нажать на другую кнопку, либо реализовать доп логику.
-        // Я добавлю "мягкое" закрытие по двойному клику? не надо.
-
-        // Доп. фича: если нажать на ту же активную кнопку, можно скрыть блок (по желанию). 
-        // Но по тз просто переход, так что не будем усложнять.
-
-        // Однако добавим возможность убрать подсветку, если кликнуть мимо — не требуется.
-        // Так же для отзывчивости можно при первом рендере оставить только вопрос.
+       
         console.log('готово — выбери страну');
     })();
 </script>
 
-<!-- Примечание: ссылки на Tedsby используют иконку fa-paw/fa-cat, так как у FontAwesome нет оригинальной иконки Tedsby. 
-     При желании заменить на собственную.  -->
 </body>
 </html>
